@@ -1,0 +1,69 @@
+/**
+ * EasyZoom core styles
+ */
+.spZoom {
+	position: relative!important;
+
+	/* 'Shrink-wrap' the element */
+	display: inline-block!important;
+	*display: inline!important;
+	*zoom: 1!important;
+}
+
+.spZoom img {
+	vertical-align: bottom;
+}
+
+.spZoom.is-loading img {
+	cursor: progress;
+}
+
+.spZoom.is-ready img {
+	cursor: crosshair;
+}
+
+.spZoom.is-error  img {
+	cursor: not-allowed;
+}
+
+.spZoom-notice {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 150;
+	width: 10em;
+	margin: -1em 0 0 -5em;
+	line-height: 2em;
+	text-align: center;
+	background: #FFF;
+	box-shadow: 0 0 10px #888;
+}
+
+.spZoom-flyout {
+	position:absolute;
+	z-index: 100;
+	overflow: hidden;
+	background: #FFF;
+}
+
+.spZoom-flyout img {
+     max-width: none!important;
+}
+
+/**
+ * EasyZoom layout variations
+ */
+.spZoom--overlay .spZoom-flyout {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.spZoom--adjacent .spZoom-flyout {
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	margin-left: 20px;
+}
