@@ -1,8 +1,12 @@
 /**
- * EasyZoom core styles
+ * Image Zoom core styles
  */
 .spZoom {
-	position: relative!important;
+	position: absolute!important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
 	/* 'Shrink-wrap' the element */
 	display: inline-block!important;
@@ -51,7 +55,7 @@
 }
 
 /**
- * EasyZoom layout variations
+ * Image Zoom layout variations
  */
 .spZoom--overlay .spZoom-flyout {
 	top: 0;
